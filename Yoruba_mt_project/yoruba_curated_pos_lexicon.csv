@@ -1,0 +1,368 @@
+yoruba,english,pos,domain,register,tone_pattern,notes
+E káàárọ̀,good morning,GREET,greeting,polite,MHLHM,
+E kú ọ̀sán,good afternoon,GREET,greeting,polite,MHMH,
+E kú ìrọ̀lẹ́,good evening,GREET,greeting,polite,MHLMM,
+E kú àbọ̀,welcome,GREET,greeting,polite,MHLM,
+E ṣé,thank you,GREET,greeting,polite,MH,
+O dàbọ̀,goodbye,GREET,greeting,polite,MLM,
+O dáàrọ̀,good night,GREET,greeting,polite,MHLM,
+Báwo ni,how are you,GREET,greeting,polite,HMM,
+E jọ̀wọ́,please,GREET,greeting,polite,MMM,
+E má bínú,I am sorry,GREET,greeting,polite,MHHH,
+E káàsán,good day,GREET,greeting,polite,MHLH,
+mo,I,PRON,function,neutral,M,subject 1sg
+o,you,PRON,function,neutral,M,subject 2sg informal
+ó,he/she/it,PRON,function,neutral,H,subject 3sg
+a,we,PRON,function,neutral,M,subject 1pl
+ẹ,you (pl),PRON,function,neutral,M,subject 2pl / polite
+wọ́n,they,PRON,function,neutral,M,subject 3pl
+èmi,I (emph),PRON,function,neutral,LM,emphatic 1sg
+ìwọ,you (emph),PRON,function,neutral,LM,emphatic 2sg
+òun,he/she,PRON,function,neutral,LM,emphatic 3sg
+àwa,we (emph),PRON,function,neutral,LM,emphatic 1pl
+ẹ̀yin,you (emph),PRON,function,neutral,MM,emphatic 2pl
+àwọn,they (emph),PRON,function,neutral,LM,emphatic 3pl / plural marker
+mi,me/my,PRON,function,neutral,M,object/possessive 1sg
+rẹ,your,PRON,function,neutral,M,possessive 2sg
+rẹ̀,his/her/its,PRON,function,neutral,M,possessive 3sg
+wa,our/us,PRON,function,neutral,M,object/possessive 1pl
+yín,your (pl),PRON,function,neutral,H,possessive 2pl / polite
+wọn,them/their,PRON,function,neutral,M,object/possessive 3pl
+náà,the/that,DET,function,neutral,HL,post-nominal definite
+yìí,this,DET,function,neutral,LH,post-nominal proximal
+ìyẹn,that,DET,function,neutral,LM,distal demonstrative
+wọ̀nyí,these,DET,function,neutral,MH,plural proximal
+wọ̀nyẹn,those,DET,function,neutral,MM,plural distal
+gbogbo,all,DET,function,neutral,MM,quantifier
+ní,at/in,PREP,function,neutral,H,general locative
+nínú,inside/in,PREP,function,neutral,HH,containment
+lórí,on/upon,PREP,function,neutral,HH,surface contact
+sí,to,PREP,function,neutral,H,directional
+láti,from,PREP,function,neutral,HM,source
+kúrò,away from,PREP,function,neutral,HL,departure
+pẹ̀lú,with,PREP,function,neutral,MH,comitative
+láìní,without,PREP,function,neutral,HLH,privative
+fún,for,PREP,function,neutral,H,benefactive
+nípa,about/by,PREP,function,neutral,HM,topic/means
+lábẹ́,under,PREP,function,neutral,HM,sub-locative
+súnmọ́,near,PREP,function,neutral,HM,proximity
+jìnnà,far,PREP,function,neutral,LL,distance
+láàrín,between,PREP,function,neutral,HLH,mediative
+ṣáájú,before,PREP,function,neutral,HHH,temporal/spatial
+lẹ́yìn,after/behind,PREP,function,neutral,ML,temporal/spatial
+àti,and,CONJ,function,neutral,LM,NP conjunction
+sì,and,CONJ,function,neutral,L,VP/clause conjunction
+ṣùgbọ́n,but,CONJ,function,neutral,LM,contrast
+tàbí,or,CONJ,function,neutral,LH,disjunction
+nítorí náà,so,CONJ,function,neutral,HMHHL,consequence
+bí,if/as,CONJ,function,neutral,H,conditional
+nígbà tí,when,CONJ,function,neutral,HLH,temporal
+nítorí pé,because,CONJ,function,neutral,HMHH,causal
+kí,that/so that,CONJ,function,neutral,H,purposive
+títí,until,CONJ,function,neutral,HH,temporal limit
+pé,that,CONJ,function,neutral,H,complementiser
+bí ó tilẹ̀ jẹ́ pé,although,CONJ,function,neutral,HHMMMH,concessive
+ń,progressive,AUX,function,neutral,,pre-verbal progressive marker
+ti,perfect,AUX,function,neutral,M,perfect aspect
+yóò,will,AUX,function,neutral,HL,future
+máa,will / shall,AUX,function,neutral,HM,future / intentive
+máa ń,usually,AUX,function,neutral,HM,habitual
+lè,can,AUX,function,neutral,L,ability
+gbọ́dọ̀,must,AUX,function,neutral,MM,obligation
+fẹ́,want to,AUX,function,neutral,M,desiderative
+kò,not,AUX,function,neutral,L,negation
+má,do not,AUX,function,neutral,H,imperative negation
+tíì,yet,AUX,function,neutral,HL,used with perfect negation
+bá,if/when,AUX,function,neutral,H,conditional particle
+Ṣé,is it that,PART,question,neutral,H,polar question
+Njẹ́,is it that,PART,question,neutral,M,polar question (formal)
+kín,what,PART,question,neutral,H,
+ta,who,PART,question,neutral,M,
+níbo,where,PART,question,neutral,HM,
+nígbà wo,when,PART,question,neutral,HLM,
+kí ló dé,why,PART,question,neutral,HHH,
+báwo,how,PART,question,neutral,HM,
+mélòó,how many,PART,question,neutral,HLH,
+èwo,which,PART,question,neutral,LM,
+ọ̀kan,one,NUM,number,neutral,MM,value=1
+èjì,two,NUM,number,neutral,LL,value=2
+ẹ̀ta,three,NUM,number,neutral,MM,value=3
+ẹ̀rin,four,NUM,number,neutral,MM,value=4
+àrún,five,NUM,number,neutral,LH,value=5
+ẹ̀fà,six,NUM,number,neutral,ML,value=6
+èje,seven,NUM,number,neutral,LM,value=7
+ẹ̀jọ,eight,NUM,number,neutral,MM,value=8
+ẹ̀sán,nine,NUM,number,neutral,MH,value=9
+ẹ̀wàá,ten,NUM,number,neutral,MLH,value=10
+ọ̀kànlá,eleven,NUM,number,neutral,MLH,value=11
+èjìlá,twelve,NUM,number,neutral,LLH,value=12
+ẹ̀tàlá,thirteen,NUM,number,neutral,MLH,value=13
+ẹ̀rìnlá,fourteen,NUM,number,neutral,MLH,value=14
+ẹ̀ẹ́dógún,fifteen,NUM,number,neutral,MMHH,value=15
+ogún,twenty,NUM,number,neutral,MH,value=20
+ọgbọ̀n,thirty,NUM,number,neutral,MM,value=30
+ogójì,forty,NUM,number,neutral,MHL,value=40
+àádọ́ta,fifty,NUM,number,neutral,LHMM,value=50
+ọgọ́rùn-ún,one hundred,NUM,number,neutral,MMLH,value=100
+ẹgbẹ̀rún,one thousand,NUM,number,neutral,MMH,value=1000
+àkọ́kọ́,first,NUM,number,neutral,LMM,ordinal
+èkejì,second,NUM,number,neutral,LML,ordinal
+ẹ̀kẹta,third,NUM,number,neutral,MMM,ordinal
+ìkẹyìn,last,NUM,number,neutral,LML,ordinal
+olùkọ́,teacher,N,person,neutral,MLM,
+akẹ́kọ̀ọ́,student,N,person,neutral,MMMM,
+àwọn akẹ́kọ̀ọ́,students,N,person,neutral,LMMMMM,
+olùdarí,principal,N,person,neutral,MLMH,
+ọ̀rẹ́,friend,N,person,neutral,MM,
+ọmọdé,child,N,person,neutral,MMH,
+àwọn ọmọdé,children,N,person,neutral,LMMMH,
+ènìyàn,person,N,person,neutral,LLL,
+ilé ẹ̀kọ́,school,N,place,neutral,MHMM,
+kíláàsì,class/classroom,N,place,neutral,HHLL,
+ilé ìkàwé,library,N,place,neutral,MHLLH,
+ilé yàrá ìdánwò,laboratory,N,place,neutral,MHLHLHL,
+pápá eré,playground,N,place,neutral,HHMH,
+ọ́fíìsì,office,N,place,neutral,MHLL,
+yàrá olùkọ́,staffroom,N,place,neutral,LHMLM,
+ilé oúnjẹ,canteen,N,place,neutral,MHMHM,
+ilé ìgbọ̀nsẹ̀,toilet,N,place,neutral,MHLMM,
+ọgbà,garden,N,place,neutral,ML,
+ẹnubodè,gate,N,place,neutral,MMML,
+odi,fence,N,place,neutral,MM,
+ilé,house/home,N,place,neutral,MH,
+ìwé,book,N,object,neutral,LH,
+àwọn ìwé,books,N,object,neutral,LMLH,
+ìwé àkọsílẹ̀,notebook,N,object,neutral,LHLMHM,
+ìwé ẹ̀kọ́,textbook,N,object,neutral,LHMM,
+ìwé àdánwò,exercise book,N,object,neutral,LHLHL,
+ìwé atúmọ̀ èdè,dictionary,N,object,neutral,LHMHMLL,
+kálámù,pen,N,object,neutral,HHL,
+pẹ́ńsúlù,pencil,N,object,neutral,MHL,
+rúlà,ruler,N,object,neutral,HL,
+rọ́bà,eraser,N,object,neutral,ML,
+kọ́ọ̀kì,chalk,N,object,neutral,MML,
+máàkà,marker,N,object,neutral,HLL,
+pátákó,board,N,object,neutral,HHH,
+pátákó dúdú,blackboard,N,object,neutral,HHHHH,
+pátákó funfun,whiteboard,N,object,neutral,HHHMM,
+tábìlì,table,N,object,neutral,HLL,
+tébùrù,desk/table,N,object,neutral,HLL,
+ìrẹsì,rice,N,food,neutral,LML,
+àga,chair,N,object,neutral,LM,
+àpò,bag,N,object,neutral,LL,
+kọ̀ǹpútà,computer,N,object,neutral,MHL,
+ẹ̀rọ ìṣírò,calculator,N,object,neutral,MMLHL,
+àwòrán ilẹ̀,map,N,object,neutral,LLHMM,
+agogo,bell,N,object,neutral,MMM,
+àsíá,flag,N,object,neutral,LHH,
+àṣọ,cloth/uniform,N,object,neutral,LM,
+fáánì,fan,N,object,neutral,HHL,
+iná mọ̀nàmọ́ná,electricity,N,object,neutral,MHMLMH,
+omi,water,N,object,neutral,MM,
+oúnjẹ,food,N,food,neutral,MHM,
+ẹ̀kọ́,lesson,N,academic,neutral,MM,
+ìbéèrè,question,N,academic,neutral,LHLL,
+ìdáhùn,answer,N,academic,neutral,LHL,
+iṣẹ́ ilé,homework,N,academic,neutral,MMMH,
+iṣẹ́ àṣẹ,assignment,N,academic,neutral,MMLM,
+ìdánwò,examination,N,academic,neutral,LHL,
+àkọsílẹ̀,note,N,academic,neutral,LMHM,
+àmì,mark,N,academic,neutral,LL,
+èsì,result,N,academic,neutral,LL,
+ipò,position/rank,N,academic,neutral,ML,
+ewì,poem,N,academic,neutral,ML,
+àròkọ,composition,N,academic,neutral,LLM,
+gbólóhùn,sentence,N,academic,neutral,HHL,
+ọ̀rọ̀,word,N,academic,neutral,MM,
+orúkọ,name,N,person,neutral,MHM,
+àkòrí,topic,N,academic,neutral,LLH,
+ìlà,line,N,object,neutral,LL,
+àwọ̀,colour,N,quality,neutral,LM,
+ariwo,noise,N,general,neutral,MMM,
+ìwà rere,good behaviour,N,quality,neutral,LLMM,
+àdúrà,prayer,N,social,neutral,LHL,
+orin ìyìn,anthem,N,social,neutral,MMLL,
+orin,song,N,social,neutral,MM,
+ìsinmi,holiday/break,N,time,neutral,LMM,
+ìtò,order/line,N,general,neutral,LL,
+àkókò,time,N,time,neutral,LHL,
+ìṣírò,mathematics,N,subject,neutral,LHL,
+Èdè Gẹ̀ẹ́sì,English,N,subject,neutral,LLMML,
+èdè Yorùbá,Yoruba language,N,subject,neutral,LLMLH,
+sáyẹ́ǹsì,science,N,subject,neutral,HML,
+ìtàn,history,N,subject,neutral,LL,
+Jẹ́ọ́gírápì,geography,N,subject,neutral,MMHHL,
+ẹ̀kọ́ ìlú,social studies,N,subject,neutral,MMLH,
+ẹ̀kọ́ ọmọlúàbí,civic education,N,subject,neutral,MMMMHLH,
+iṣẹ́ ọnà,art,N,subject,neutral,MMML,
+orin,music,N,subject,neutral,MM,
+ẹ̀kọ́ eré ìdárayá,physical education,N,subject,neutral,MMMHLHMH,
+ẹ̀kọ́ kọ̀ǹpútà,computer studies,N,subject,neutral,MMMHL,
+ẹ̀kọ́ iṣẹ́ àgbẹ̀,agriculture,N,subject,neutral,MMMMLM,
+Kẹ́mísírì,chemistry,N,subject,neutral,MHHL,
+Físíìkì,physics,N,subject,neutral,HHLL,
+ẹ̀kọ́ ètò ọrọ̀ ajé,economics,N,subject,neutral,MMLLMMMH,
+Lítíréṣọ̀,literature,N,subject,neutral,HHHM,
+ẹ̀kọ́ ìsìn,religious studies,N,subject,neutral,MMLL,
+èdè Faransé,French,N,subject,neutral,LLMMH,
+Lárúbáwá,Arabic,N,subject,neutral,HHHH,
+ẹ̀kọ́ ìṣàkóso ilé,home economics,N,subject,neutral,MMLLHMMH,
+kàwé,read/study,V,action,neutral,LH,
+kọ,write,V,action,neutral,M,
+kọ́,learn/teach,V,action,neutral,M,
+wá,come,V,action,neutral,H,
+lọ,go,V,action,neutral,M,
+padà,return,V,action,neutral,ML,
+rí,see,V,action,neutral,H,
+wò,look at,V,action,neutral,L,
+gbọ́,hear/listen,V,action,neutral,M,
+sọ,say,V,action,neutral,M,
+sọ̀rọ̀,speak,V,action,neutral,MM,
+béèrè,ask,V,action,neutral,HLL,
+dáhùn,answer,V,action,neutral,HL,
+jẹun,eat,V,action,neutral,MM,
+mu,drink,V,action,neutral,M,
+káàárọ̀,Good morning,V,action,neutral,HLHM,
+sùn,sleep,V,action,neutral,L,
+jí,wake up,V,action,neutral,H,
+ṣeré,play,V,action,neutral,MH,
+dìde,stand up,V,action,neutral,LM,
+jókòó,sit down,V,action,neutral,HLH,
+dúró,stop/wait,V,action,neutral,HH,
+rin,walk/march,V,action,neutral,M,
+wọlé,enter,V,action,neutral,MH,
+jáde,go out,V,action,neutral,HM,
+ṣí,open,V,action,neutral,H,
+pa dé,close,V,action,neutral,MH,
+gbé,lift/carry,V,action,neutral,H,
+mú,take/bring,V,action,neutral,H,
+fi,put/place,V,action,neutral,M,
+fún,give,V,action,neutral,H,
+gba,receive/take,V,action,neutral,M,
+ní,have,V,action,neutral,H,
+wà,be/exist,V,action,neutral,L,
+jẹ́,be,V,action,neutral,M,
+ṣe,do,V,action,neutral,M,
+ṣàlàyé,explain,V,action,neutral,LLH,
+yé,understand,V,action,neutral,H,
+mọ̀,know,V,action,neutral,M,
+rántí,remember,V,action,neutral,HH,
+gbàgbé,forget,V,action,neutral,LH,
+fẹ́ràn,like/love,V,emotion,neutral,ML,
+nífẹ̀ẹ́,love,V,emotion,neutral,HMM,
+fẹ́,want,V,emotion,neutral,M,
+bínú,be angry,V,emotion,neutral,HH,
+rẹ́rìn-ín,laugh,V,emotion,neutral,MLH,
+yìn,praise,V,action,neutral,L,
+ràn … lọ́wọ́,help,V,action,neutral,LMM,
+parí,finish,V,action,neutral,MH,
+bẹ̀rẹ̀,begin,V,action,neutral,MM,
+gbìyànjú,try,V,action,neutral,LLH,
+jáwọ́,give up,V,action,neutral,HM,
+ṣàtúnṣe,correct,V,action,neutral,LHM,
+yẹ … wò,check,V,action,neutral,ML,
+tún … wò,revise,V,action,neutral,HL,
+borí,overcome/pass,V,action,neutral,MH,
+kùnà,fail,V,action,neutral,LL,
+kọjá,pass,V,action,neutral,MH,
+yanjú,solve,V,action,neutral,MH,
+pín,divide/share,V,action,neutral,H,
+yọ,subtract/remove,V,action,neutral,M,
+ṣe ìṣírò,calculate,V,action,neutral,MLHL,
+kà,count/read,V,action,neutral,L,
+wọn,measure,V,action,neutral,M,
+fa,draw/pull,V,action,neutral,M,
+ya,draw/tear,V,action,neutral,M,
+tò,arrange,V,action,neutral,L,
+nù,clean/wipe,V,action,neutral,L,
+pa … rẹ́,erase,V,action,neutral,MM,
+sọnù,lose,V,action,neutral,ML,
+yá,borrow/lend,V,action,neutral,H,
+dá … padà,return (sth),V,action,neutral,HML,
+gbà,agree/accept,V,action,neutral,L,
+bọ̀wọ̀ fún,respect,V,social,neutral,MMH,
+pèsè,provide,V,action,neutral,LL,
+tẹ̀síwájú,continue,V,action,neutral,MHHH,
+ṣàṣeyọrí,succeed,V,action,neutral,LMMH,
+dára,good,ADJ,quality,neutral,HM,
+burú,bad,ADJ,quality,neutral,MH,
+tóbi,big,ADJ,quality,neutral,HM,
+kéré,small,ADJ,quality,neutral,HH,
+mọ́,clean,ADJ,quality,neutral,M,
+dọ̀tí,dirty,ADJ,quality,neutral,MH,
+tuntun,new,ADJ,quality,neutral,MM,
+àtijọ́,old,ADJ,quality,neutral,LMM,
+lẹ́wà,beautiful,ADJ,quality,neutral,ML,
+ṣòro,difficult,ADJ,quality,neutral,LM,
+rọrùn,easy,ADJ,quality,neutral,ML,
+pàtàkì,important,ADJ,quality,neutral,LLL,
+dùn mọ́ni,interesting/enjoyable,ADJ,quality,neutral,LMM,
+gbọ́n,clever,ADJ,quality,neutral,M,
+ọlẹ́,lazy,ADJ,quality,neutral,MM,
+le,strict/hard,ADJ,quality,neutral,M,
+pupa,red,ADJ,quality,neutral,MM,
+búlúù,blue,ADJ,quality,neutral,HHL,
+funfun,white,ADJ,quality,neutral,MM,
+dúdú,black,ADJ,quality,neutral,HH,
+ewé,green,ADJ,quality,neutral,MH,
+púpọ̀,many,ADJ,quality,neutral,HM,
+díẹ̀,few,ADJ,quality,neutral,HM,
+gíga,high,ADJ,quality,neutral,HM,
+gígùn,long,ADJ,quality,neutral,HL,
+kánkán,quick,ADJ,quality,neutral,HH,
+tọ́,correct,ADJ,quality,neutral,M,
+olóòtọ́,honest,ADJ,quality,neutral,MHLM,
+wúlò,useful,ADJ,quality,neutral,HL,
+aládàáṣe,creative,ADJ,quality,neutral,MHLHM,
+àádọ́ta,healthy (lit. of good health),ADJ,quality,neutral,LHMM,
+dáadáa,well/carefully,ADV,quality,neutral,HMHM,
+gidigidi,very much/hard,ADV,quality,neutral,MMMM,
+takuntakun,tirelessly,ADV,quality,neutral,MMMM,
+déédéé,regularly,ADV,quality,neutral,HHHH,
+lójoojúmọ́,every day,ADV,quality,neutral,HMMHM,
+kánkán,quickly,ADV,quality,neutral,HH,
+lẹ́ẹ̀kansi,again,ADV,quality,neutral,MMMM,
+lónìí,today,ADV,quality,neutral,HLH,
+lánàá,yesterday,ADV,quality,neutral,HLH,
+lọ́la,tomorrow,ADV,quality,neutral,MM,
+báyìí,now,ADV,quality,neutral,HLH,
+níbí,here,ADV,quality,neutral,HH,
+níbẹ̀,there,ADV,quality,neutral,HM,
+sókè,up,ADV,quality,neutral,HL,
+kalẹ̀,down,ADV,quality,neutral,MM,
+níta,outside,ADV,quality,neutral,HM,
+kedere,clearly,ADV,quality,neutral,MMM,
+rara,aloud,ADV,quality,neutral,MM,
+ní kùtùkùtù,early,ADV,quality,neutral,HLLLL,
+pẹ́,late,ADV,quality,neutral,M,
+ṣáájú,before,ADV,quality,neutral,HHH,
+Ọjọ́ Àìkú,Sunday,N,time,neutral,MMLLH,
+Ọjọ́ Ajé,Monday,N,time,neutral,MMMH,
+Ọjọ́ Ìsẹ́gun,Tuesday,N,time,neutral,MMLMM,
+Ọjọ́ Rú,Wednesday,N,time,neutral,MMH,
+Ọjọ́bọ̀,Thursday,N,time,neutral,MMM,
+Ọjọ́ Ẹtì,Friday,N,time,neutral,MMML,
+Ọjọ́ Àbámẹ́ta,Saturday,N,time,neutral,MMLHMM,
+oṣù,month,N,time,neutral,ML,
+oṣù Kínní,January,N,time,neutral,MLHH,
+oṣù Kejì,February,N,time,neutral,MLML,
+oṣù Kẹta,March,N,time,neutral,MLMM,
+oṣù Kẹrin,April,N,time,neutral,MLMM,
+oṣù Okudu,June,N,time,neutral,MLMMM,
+oṣù Agẹmọ,July,N,time,neutral,MLMMM,
+oṣù Bẹ́lú,December,N,time,neutral,MLMH,
+ọ̀sẹ̀,week,N,time,neutral,MM,
+ọdún,year,N,time,neutral,MH,
+àárọ̀,morning,N,time,neutral,LHM,
+ọ̀sán,afternoon,N,time,neutral,MH,
+ìrọ̀lẹ́,evening,N,time,neutral,LMM,
+alẹ́,night,N,time,neutral,MM,
+aago,clock/o'clock,N,time,neutral,MMM,
+ọwọ́,hand,N,body,neutral,MM,
+orí,head,N,body,neutral,MH,
+ojú,face/eye,N,body,neutral,MH,
+etí,ear,N,body,neutral,MH,
+ẹnu,mouth,N,body,neutral,MM,
+ara,body,N,body,neutral,MM,
+ẹsẹ̀,leg/foot,N,body,neutral,MM,
+inú,stomach/inside,N,body,neutral,MH,

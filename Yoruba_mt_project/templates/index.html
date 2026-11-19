@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yorùbá ↔ English Translator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══════════ HEADER ═══════════ -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <span class="logo-letter">Y</span>
+                    <span class="logo-arrow">⇄</span>
+                    <span class="logo-letter">E</span>
+                </div>
+                <div class="logo-text">
+                    <h1>Yorùbá ↔ English</h1>
+                    <p class="tagline">Education & Classroom Translation System</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn-header" id="btn-stats" title="System Statistics">
+                    <span class="btn-icon">📊</span>
+                    <span class="btn-label">Stats</span>
+                </button>
+                <button class="btn-header" id="btn-evaluate" title="Run Evaluation">
+                    <span class="btn-icon">🎯</span>
+                    <span class="btn-label">Evaluate</span>
+                </button>
+                <button class="btn-header" id="btn-help" title="Help Guide">
+                    <span class="btn-icon">❓</span>
+                    <span class="btn-label">Help</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════ MAIN CONTENT ═══════════ -->
+    <main class="main-content">
+
+        <!-- Direction Selector -->
+        <div class="direction-selector">
+            <button class="dir-btn active" id="dir-en-yo" data-direction="en_to_yo">
+                <span class="dir-flag">🇬🇧</span>
+                <span class="dir-lang">English</span>
+                <span class="dir-arrow">→</span>
+                <span class="dir-flag">🇳🇬</span>
+                <span class="dir-lang">Yorùbá</span>
+            </button>
+            <button class="swap-btn" id="btn-swap" title="Swap languages">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"/>
+                </svg>
+            </button>
+            <button class="dir-btn" id="dir-yo-en" data-direction="yo_to_en">
+                <span class="dir-flag">🇳🇬</span>
+                <span class="dir-lang">Yorùbá</span>
+                <span class="dir-arrow">→</span>
+                <span class="dir-flag">🇬🇧</span>
+                <span class="dir-lang">English</span>
+            </button>
+        </div>
+
+        <!-- Translation Panel -->
+        <div class="translation-panel">
+            <!-- Source Input -->
+            <div class="panel-section source-section">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span class="panel-flag" id="source-flag">🇬🇧</span>
+                        <span id="source-label">English</span>
+                    </div>
+                    <div class="panel-actions">
+                        <button class="action-btn" id="btn-paste" title="Paste from clipboard">📋</button>
+                        <button class="action-btn" id="btn-clear" title="Clear text">✕</button>
+                    </div>
+                </div>
+                <textarea
+                    id="source-text"
+                    placeholder="Type or paste text here..."
+                    rows="6"
+                    maxlength="5000"
+                    spellcheck="false"
+                    autofocus
+                ></textarea>
+                <div class="panel-footer">
+                    <span class="char-count"><span id="char-count">0</span> / 5000</span>
+                </div>
+            </div>
+
+            <!-- Translate Button -->
+            <div class="translate-action">
+                <button class="btn-translate" id="btn-translate">
+                    <span class="btn-text">Translate</span>
+                    <span class="btn-loader" id="loader" style="display:none;">
+                        <span class="spinner"></span>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Target Output -->
+            <div class="panel-section target-section">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <span class="panel-flag" id="target-flag">🇳🇬</span>
+                        <span id="target-label">Yorùbá</span>
+                    </div>
+                    <div class="panel-actions">
+                        <button class="action-btn" id="btn-copy" title="Copy translation">📄</button>
+                    </div>
+                </div>
+                <div class="output-area" id="output-area">
+                    <p class="placeholder-text" id="output-placeholder">
+                        Translation will appear here...
+                    </p>
+                    <p class="translation-text" id="translation-text" style="display:none;"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translation Details Card -->
+        <div class="details-card" id="details-card" style="display:none;">
+            <div class="details-header">
+                <h3>📋 Translation Details</h3>
+                <button class="action-btn" id="btn-close-details">✕</button>
+            </div>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Confidence</span>
+                    <div class="confidence-bar-container">
+                        <div class="confidence-bar" id="conf-bar">
+                            <span class="confidence-value" id="conf-value">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Match Type</span>
+                    <span class="detail-value badge" id="detail-match">—</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Section</span>
+                    <span class="detail-value" id="detail-section">—</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Tokens</span>
+                    <span class="detail-value" id="detail-tokens">—</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Processing Time</span>
+                    <span class="detail-value" id="detail-time">—</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Rules Applied</span>
+                    <span class="detail-value" id="detail-rules">—</span>
+                </div>
+            </div>
+            <!-- Alternatives -->
+            <div class="alternatives-section" id="alternatives-section" style="display:none;">
+                <h4>Alternative Translations</h4>
+                <ul id="alternatives-list"></ul>
+            </div>
+        </div>
+
+        <!-- Quick Examples -->
+        <div class="examples-section">
+            <div class="examples-header">
+                <h3>⚡ Quick Examples</h3>
+                <p>Click any example to translate instantly</p>
+            </div>
+            <div class="examples-grid" id="examples-grid">
+                <!-- Filled by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Batch Translation -->
+        <div class="batch-section">
+            <div class="section-header">
+                <h3>📑 Batch Translation</h3>
+                <p>Enter multiple sentences (one per line)</p>
+            </div>
+            <textarea
+                id="batch-input"
+                placeholder="Enter sentences here, one per line...&#10;Example:&#10;Good morning, teacher.&#10;Stand up.&#10;Open your book."
+                rows="5"
+            ></textarea>
+            <button class="btn-secondary" id="btn-batch">
+                Translate All
+            </button>
+            <div class="batch-results" id="batch-results" style="display:none;">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Source</th>
+                            <th>Translation</th>
+                            <th>Confidence</th>
+                        </tr>
+                    </thead>
+                    <tbody id="batch-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ═══════════ MODALS ═══════════ -->
+
+    <!-- Stats Modal -->
+    <div class="modal-overlay" id="modal-stats">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>📊 System Statistics</h2>
+                <button class="modal-close" onclick="closeModal('modal-stats')">✕</button>
+            </div>
+            <div class="modal-body" id="stats-body">
+                <div class="loading-state">Loading statistics...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evaluation Modal -->
+    <div class="modal-overlay" id="modal-evaluate">
+        <div class="modal modal-lg">
+            <div class="modal-header">
+                <h2>🎯 System Evaluation</h2>
+                <button class="modal-close" onclick="closeModal('modal-evaluate')">✕</button>
+            </div>
+            <div class="modal-body" id="evaluate-body">
+                <div class="eval-controls">
+                    <label>Direction:</label>
+                    <select id="eval-direction">
+                        <option value="en_to_yo">English → Yorùbá</option>
+                        <option value="yo_to_en">Yorùbá → English</option>
+                    </select>
+                    <label>Sample Size:</label>
+                    <select id="eval-sample">
+                        <option value="20">20 sentences</option>
+                        <option value="50" selected>50 sentences</option>
+                        <option value="100">100 sentences</option>
+                        <option value="0">All sentences</option>
+                    </select>
+                    <button class="btn-primary" id="btn-run-eval">Run Evaluation</button>
+                </div>
+                <div class="eval-results" id="eval-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div class="modal-overlay" id="modal-help">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>❓ How to Use</h2>
+                <button class="modal-close" onclick="closeModal('modal-help')">✕</button>
+            </div>
+            <div class="modal-body help-body">
+                <div class="help-item">
+                    <h4>1️⃣ Choose Direction</h4>
+                    <p>Select whether to translate from English to Yorùbá or Yorùbá to English using the buttons at the top.</p>
+                </div>
+                <div class="help-item">
+                    <h4>2️⃣ Enter Text</h4>
+                    <p>Type or paste your text in the input box. You can enter classroom greetings, instructions, academic terms, and more.</p>
+                </div>
+                <div class="help-item">
+                    <h4>3️⃣ Click Translate</h4>
+                    <p>Press the Translate button or use <kbd>Ctrl</kbd> + <kbd>Enter</kbd> to translate.</p>
+                </div>
+                <div class="help-item">
+                    <h4>4️⃣ Review Results</h4>
+                    <p>View the translation along with confidence scores, match types, and alternative translations.</p>
+                </div>
+                <div class="help-item">
+                    <h4>5️⃣ Quick Examples</h4>
+                    <p>Click any example sentence below the translator to instantly translate it.</p>
+                </div>
+                <div class="help-item">
+                    <h4>6️⃣ Batch Mode</h4>
+                    <p>Enter multiple sentences (one per line) in the batch section for bulk translation.</p>
+                </div>
+                <div class="help-item">
+                    <h4>📚 Coverage</h4>
+                    <p>This system covers education and classroom vocabulary including greetings, instructions, subjects, school environment, numbers, days, and academic discussions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon" id="toast-icon">✓</span>
+        <span class="toast-message" id="toast-message">Success</span>
+    </div>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>Yorùbá ↔ English Rule-Based Machine Translation System</p>
+            <p class="footer-sub">Education &amp; Classroom Domain • Built with Python &amp; Flask</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
